@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <input type="text" id="locationInput" placeholder="Enter location (e.g., city or ZIP code)">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="weatherDisplay"></div>
+        <div id="errorDisplay"></div>
+        <div class="unit-toggle">
+            <label class="unit-toggle-label">Toggle units:</label>
+            <label class="container-toggle">Fahrenheit
+                <input type="radio" name="unitToggle" value="imperial" onclick="toggleUnits('imperial')" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-toggle">Celsius
+                <input type="radio" name="unitToggle" value="metric" onclick="toggleUnits('metric')">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
